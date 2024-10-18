@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Galeri</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body {
+                background-color: #36393f;
+            }
+            .carousel-item {
+                width: 100vw;
+                height: 92.8vh;
+                background: black;
+                color: white;
+                position: relative;
+            }
+            .container {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                padding-bottom: 15vh;
+                font-size: 1vw;
+            }
+            .overlay-image {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                top: 0;
+                background-position: center;
+                background-size: cover;
+                opacity: 0.6;
+            }
+        </style>
+    </head>
+    <body>
+    <script src="js/bootstrap.bundle.js"></script>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="biodataDiriBackup.html">
+                    Andrey
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Beranda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="biodataDiriBackup.html">Tentang</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="jadwalBackup.html">Jadwal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" >Galeri</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- End of Navigation -->
+
+        <!-- Carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="overlay-image" style="background-image: url(images/IMG_20220718_190123.jpg);"></div>
+                        <div class="container">
+                            <h1>Lorem Ipsum Dolor Sit Amet</h1>
+                            <p>consectetur adipiscing elit. Integer rhoncus auctor facilisis. Quisque lobortis dolor sit amet eleifend malesuada. Ut pulvinar risus ac condimentum tincidunt.</p>
+                            <a href="#" class=" btn btn-lg btn-primary">Lorem Ipsum</a>
+                        </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="overlay-image" style="background-image:url(images/IMG_20220718_190201.jpg);"></div>
+                        <div class="container">
+                            <h1>Lorem Ipsum Dolor Sit Amet</h1>
+                            <p>consectetur adipiscing elit. Integer rhoncus auctor facilisis. Quisque lobortis dolor sit amet eleifend malesuada. Ut pulvinar risus ac condimentum tincidunt.</p>
+                            <a href="#" class=" btn btn-lg btn-primary">Lorem Ipsum</a>
+                        </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="overlay-image" style="background-image: url(images/IMG_20220718_190436.jpg);"></div>
+                        <div class="container">
+                            <h1>Lorem Ipsum Dolor Sit Amet</h1>
+                            <p>consectetur adipiscing elit. Integer rhoncus auctor facilisis. Quisque lobortis dolor sit amet eleifend malesuada. Ut pulvinar risus ac condimentum tincidunt.</p>
+                            <a href="#" class=" btn btn-lg btn-primary">Lorem Ipsum</a>
+                        </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- End of Carousel -->
+    </body>
+</html>
